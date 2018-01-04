@@ -2,7 +2,7 @@
 
 ## I. A Template Engine
 
-#### Main idea: similar to Python string's **format method** like " A is {title} of B".format(title="father"); Whereas, **template engine** is also a formatter, but much more powerful.
+### 1. Main idea: similar to Python string's **format method** like " A is {title} of B".format(title="father"); Whereas, **template engine** is also a formatter, but much more powerful.
 > An important phase in any web application is generating HTML to be served to the browser.
 
 > Very few HTML pages are completely static: they involve at least a small amount of __dynamic data__, such as the user's name. Usually, they contain a great deal of dynamic data: product listings, friends' news updates, and so on.
@@ -11,7 +11,7 @@
 
 > A template language flips this around: **the template file is mostly static literal text, with special notation to indicate the executable dynamic parts.**
 
-#### template syntax
+### 2. template syntax
 1.  dot : {{product.price}}
 ```html
 ...<p>The price is: {{product.price}}, with a {{product.discount}}% discount.</p>
