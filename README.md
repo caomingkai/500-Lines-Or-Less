@@ -14,7 +14,10 @@
 #### template syntax
 1.  dot : {{product.price}}
 ```html
-<p>The price is: {{product.price}}, with a {{product.discount}}% discount.</p>
+...<p>The price is: {{product.price}}, with a {{product.discount}}% discount.</p>
 ```
-2.
+2. filters with pipe character:  {{story.subject|slugify|lower}}
+```html
+<p>Short name: {{story.subject|slugify|lower}}</p>
+```
 3.
