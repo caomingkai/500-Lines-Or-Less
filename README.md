@@ -51,6 +51,7 @@ A super great resource at: http://www.aosabook.org/en/
 2. Integrate lines into a well-formed python script
 3. return to templage object the final executable script by calling " exec(python_source, global_namespace)"
 
+```html
 Code-builder
     |__   add_line()    : read in ready-to-run python lines
     |__   add_section() : set aside space for later variable assignment
@@ -58,13 +59,13 @@ Code-builder
     |__   dedent()      : dedent to form well-formed python
     |__   get_globles() : 1- call "exec(python_source, global_namespace)"
                           2- return executable script by calling get_globles()['render_function']
-
+```
 ### VI. Template
 1. used to handle template, and parse it into executable lines
 2. call functions of Code-builder object, to produce an executable script to output 'HTML string'
 3. with helper function: do_dots()
 
-
+```html
 Template
     |__   __init__(context):   1- read context( ie, values for var in template )
     |                          2- break down template text by Regex into 4 cases
@@ -83,7 +84,7 @@ Template
     |__   self._render_function() = code.get_globles['render_function'];
     |
     |__   render():             calls self._render_function() with context param
-
+```
 
 ### VII. Template Test
 
