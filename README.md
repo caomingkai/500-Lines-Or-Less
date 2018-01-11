@@ -1,6 +1,6 @@
 # 500 Lines
-
-##  A Template Engine
+--a super great resource at: http://www.aosabook.org/en/500L/introduction.html
+## --- A Template Engine  ---
 
 ### I. Main idea: similar to Python string's **format method** like " A is {title} of B".format(title="father"); Whereas, **template engine** is also a formatter, but much more powerful.
 > An important phase in any web application is generating HTML to be served to the browser.
